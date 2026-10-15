@@ -1,0 +1,21 @@
+# GA4 Portfolio Dashboard — keep internals private (Apache 2.4)
+# Only index.php, api.php and assets/ are meant to be reachable.
+
+Options -Indexes
+
+# Config, docs, keys and any dotfile (.git, .env, .gitignore …)
+<FilesMatch "(^\.|^config(\.sample)?\.php$|\.(md|json|ya?ml|sh|lock|dist)$|^LICENSE$)">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule (^|/)\. - [F,L]
+    RewriteRule ^(lib|cache|tests|docs)(/|$) - [F,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header always set X-Robots-Tag "noindex, nofollow"
+    Header always set Referrer-Policy "no-referrer"
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>

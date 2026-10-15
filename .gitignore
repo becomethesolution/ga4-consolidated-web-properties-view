@@ -1,0 +1,16 @@
+# Your settings and secrets — never commit these
+config.php
+*.json
+!composer.json
+
+# Runtime cache (keep the folder and its access rule)
+cache/*
+!cache/.htaccess
+!cache/.gitkeep
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
