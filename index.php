@@ -30,14 +30,14 @@ $refresh = max(15, (int) ($cfg['realtime_refresh_seconds'] ?? 30));
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>GA4 Portfolio Dashboard</title>
+<title>GA4 Consolidated Web Properties View</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect x='1' y='8' width='3' height='7' rx='1' fill='%232a78d6'/><rect x='6.5' y='4' width='3' height='11' rx='1' fill='%232a78d6'/><rect x='12' y='1' width='3' height='14' rx='1' fill='%232a78d6'/></svg>">
 <link rel="stylesheet" href="assets/app.css?v=1">
 </head>
 <?php if (!logged_in($cfg)): ?>
 <body class="login">
   <form method="post" class="login-card" autocomplete="off">
-    <h1>GA4 Portfolio Dashboard</h1>
+    <h1>GA4 Consolidated Web Properties View</h1>
     <label for="pw">Password</label>
     <input id="pw" type="password" name="password" autofocus required>
     <input type="hidden" name="csrf" value="<?= htmlspecialchars(csrf_token()) ?>">
@@ -49,7 +49,7 @@ $refresh = max(15, (int) ($cfg['realtime_refresh_seconds'] ?? 30));
 <body data-refresh="<?= $refresh ?>" data-login="<?= empty($cfg['password_hash']) ? '0' : '1' ?>">
   <header class="top">
     <div class="brand">
-      <a href="#/" class="home" id="home-link">All properties</a>
+      <a href="#/" class="home" id="home-link" title="All properties">GA4 Consolidated Web Properties View</a>
       <span class="crumb" id="crumb"></span>
     </div>
     <div class="live" id="live"><span class="dot"></span><span id="live-text">Connecting…</span></div>

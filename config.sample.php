@@ -1,6 +1,6 @@
 <?php
 /*
- * GA4 Portfolio Dashboard — configuration
+ * GA4 Consolidated Web Properties View — configuration
  * Copy this file to config.php and edit the values below.
  * config.php is git-ignored; never commit it or your key file.
  */

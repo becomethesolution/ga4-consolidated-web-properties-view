@@ -1,4 +1,4 @@
-# GA4 Portfolio Dashboard — keep internals private (Apache 2.4)
+# GA4 Consolidated Web Properties View — keep internals private (Apache 2.4)
 # Only index.php, api.php and assets/ are meant to be reachable.
 
 Options -Indexes

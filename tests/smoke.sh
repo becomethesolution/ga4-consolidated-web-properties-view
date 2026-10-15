@@ -27,7 +27,7 @@ check() { # url, php-expression on $d that must be true
   echo "ok  $1"
 }
 
-get "" | grep -q "GA4 Portfolio Dashboard" || fail "index page"
+get "" | grep -q "GA4 Consolidated Web Properties View" || fail "index page"
 echo "ok  index"
 
 check "api.php?action=properties"            'count($d["properties"]) > 5 && $d["meta"]["demo"] === true'

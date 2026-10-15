@@ -1,4 +1,4 @@
-/* GA4 Portfolio Dashboard — front end (no dependencies). MIT License. */
+/* GA4 Consolidated Web Properties View — front end (no dependencies). MIT License. */
 (() => {
   'use strict';
 

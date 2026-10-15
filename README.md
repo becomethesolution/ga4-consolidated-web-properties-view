@@ -1,10 +1,10 @@
-# GA4 Portfolio Dashboard
+# GA4 Consolidated Web Properties View
 
-**Real-time and historical Google Analytics 4 for all your sites on one screen.**
+**Real-time and historical Google Analytics 4 for all your sites, consolidated into one view.**
 
 Google Analytics shows one property at a time, and its combined "roll-up" properties need GA4 360. If you run several sites, there's no free way to see *"how many people are on all my sites right now?"* This dashboard is a small self-hosted PHP app that does that.
 
-![All-properties dashboard (demo data)](docs/screenshot.webp)
+![Consolidated view of all properties (demo data)](docs/screenshot.webp)
 
 ## Features
 
@@ -33,8 +33,8 @@ Google Analytics shows one property at a time, and its combined "roll-up" proper
 ## Try it in 10 seconds (demo data)
 
 ```bash
-git clone https://github.com/becomethesolution/ga4-portfolio-dashboard.git
-cd ga4-portfolio-dashboard
+git clone https://github.com/becomethesolution/ga4-consolidated-web-properties-view.git
+cd ga4-consolidated-web-properties-view
 php -S localhost:8080
 ```
 
@@ -68,7 +68,7 @@ mv ~/Downloads/your-key.json ~/ga-dashboard-private/service-account.json
 chmod 600 ~/ga-dashboard-private/service-account.json
 
 # 2. Put the app in your web root
-git clone https://github.com/becomethesolution/ga4-portfolio-dashboard.git /var/www/stats
+git clone https://github.com/becomethesolution/ga4-consolidated-web-properties-view.git /var/www/stats
 cd /var/www/stats
 cp config.sample.php config.php
 

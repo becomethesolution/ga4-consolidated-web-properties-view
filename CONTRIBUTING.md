@@ -12,8 +12,8 @@ Thanks for helping. A few ground rules keep this project easy to install and run
 ## Development
 
 ```bash
-git clone https://github.com/becomethesolution/ga4-portfolio-dashboard.git
-cd ga4-portfolio-dashboard
+git clone https://github.com/becomethesolution/ga4-consolidated-web-properties-view.git
+cd ga4-consolidated-web-properties-view
 php -S localhost:8080        # demo mode, no Google account needed
 ```
 
