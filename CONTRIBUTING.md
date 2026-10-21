@@ -23,9 +23,10 @@ Before opening a pull request:
 
 ```bash
 tests/smoke.sh               # starts the app in demo mode and checks every endpoint
+node --check assets/app.js   # syntax-checks the front end
 ```
 
-CI runs the same smoke test on PHP 8.0–8.4 and syntax-checks the JavaScript.
+There is no hosted CI, so please run these locally (on PHP 8.0 or later) before opening a pull request.
 
 ## Style
 
